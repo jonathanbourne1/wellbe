@@ -1,16 +1,28 @@
+import 'react-native-gesture-handler';
 import React from 'react';
-import {StyleSheet, View, Text, Image} from 'react-native';
+import {
+  StyleSheet,
+  View,
+  Text,
+  Image,
+  TouchableNativeFeedback,
+} from 'react-native';
 
 const Init = props => {
   return (
-    <View style={styles.container}>
-      <View>
-        <Image
-          source={require('../assets/images/wellbelogoinit.png')}
-          style={styles.image}
-        />
+    <TouchableNativeFeedback
+      onPress={() => {
+        console.log('pressed');
+      }}>
+      <View style={styles.container}>
+        <View>
+          <Image
+            source={require('../assets/images/wellbelogoinit.png')}
+            style={styles.image}
+          />
+        </View>
       </View>
-    </View>
+    </TouchableNativeFeedback>
   );
 };
 

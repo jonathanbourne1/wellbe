@@ -1,3 +1,4 @@
+import 'react-native-gesture-handler';
 import React from 'react';
 import {StyleSheet, ScrollView, View, Text} from 'react-native';
 import Init from './Screens/init';
