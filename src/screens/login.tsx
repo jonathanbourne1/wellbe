@@ -1,5 +1,6 @@
 import React, {FC} from 'react';
 import {View, TextInput} from 'react-native';
+//login
 
 const Login: FC<{}> = () => {
   return (
