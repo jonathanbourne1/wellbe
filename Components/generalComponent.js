@@ -8,10 +8,6 @@ const Component = props => {
   );
 };
 
-const style= StyleSheet.create(
-    component:{
-
-    },
-)
+const styles = StyleSheet.create({component: {}});
 
 export default Component;

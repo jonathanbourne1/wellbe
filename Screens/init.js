@@ -9,10 +9,13 @@ import {
 } from 'react-native';
 
 const Init = props => {
+  const navigation = props.navigation;
+  console.log(navigation);
+
   return (
     <TouchableNativeFeedback
       onPress={() => {
-        console.log('pressed');
+        navigation.navigate('Login');
       }}>
       <View style={styles.container}>
         <View>
